@@ -1,0 +1,30 @@
+header{
+
+}
+
+
+.header_img{
+    
+
+}
+
+.rotation{
+    display: grid;
+    grid-row: auto;
+    
+}
+
+.first{
+    display: grid;
+    grid-row: 200em;
+}
+
+.second{
+    display: grid;
+    grid-row: 200em;
+}
+
+body{
+    background-image: url("https://swallowtailtea.imgix.net/s/files/1/2960/1850/files/last-slide_2400x.jpg?v=1551770643&auto=format&q=50&");
+    background-size: auto;
+}
