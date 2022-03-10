@@ -1,30 +1,35 @@
-header{
+.container {
+    display: grid;
+    grid-gap: 20px;
+}
+.main_nav{
+    /*--background-image: url("../img/SwallowTailLogo.png");
+    background-size: 10%;-->;*/
+
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 200px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: repeat(4, 2fr);
 
 }
 
-
-.header_img{
+.menu{
+    border:1px solid black;
+    text-align: center;
     
-
 }
 
-.rotation{
-    display: grid;
-    grid-row: auto;
-    
+.menu_span{
+    grid-column: 1/2;
 }
 
-.first{
-    display: grid;
-    grid-row: 200em;
-}
-
-.second{
-    display: grid;
-    grid-row: 200em;
-}
 
 body{
+
     background-image: url("https://swallowtailtea.imgix.net/s/files/1/2960/1850/files/last-slide_2400x.jpg?v=1551770643&auto=format&q=50&");
     background-size: auto;
+
 }
