@@ -1,35 +1,121 @@
+/*All Containers*/
 .container {
+    max-width: auto;
     display: grid;
     grid-gap: 20px;
 }
+
+.banner{
+    display:grid;
+    border: 5px solid black;
+}
+
+.selection_grid{
+    display: grid;
+    border: 2px solid red;
+}
+
+/*Lists*/
+li.tea_types{
+    position:static;
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 16px;
+}
+
+
+
+/*span*/
+.font_style{
+    font-size: 60px;
+    line-height: 60px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 400;
+}
+
+.desktop--header{
+    border:1px solid rgb(0, 0, 0);
+    width: 205px;
+    height: 100px;
+    position: relative;
+    z-index: 1;
+}
+.header_logo_container{
+
+}
+.header_description{
+    
+    display: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    opacity: 0;
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    top: 15px;
+    bottom: 0;
+}
+
+.div.header_rotation{
+    border:1px solid rgb(0, 0, 0);
+
+}
+span{
+    text-align: center;
+}
+.span.media_hidden{
+    display: grid;
+    min-width: 1px;
+    min-height: 1px;
+    overflow: hidden;
+}
+
+.header_logo_container{
+    width: 205px;
+    vertical-align: middle;
+}
 .main_nav{
-    /*--background-image: url("../img/SwallowTailLogo.png");
-    background-size: 10%;-->;*/
 
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     height: 200px;
-    padding: 0;
-    list-style: none;
-    grid-template-columns: repeat(4, 2fr);
+    padding-top: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+    grid-template-columns: repeat(6, 1fr);
 
 }
 
 .menu{
-    border:1px solid black;
+    border:1px solid rgb(221, 221, 221);
     text-align: center;
-    
 }
 
-.menu_span{
-    grid-column: 1/2;
-}
+
 
 
 body{
 
     background-image: url("https://swallowtailtea.imgix.net/s/files/1/2960/1850/files/last-slide_2400x.jpg?v=1551770643&auto=format&q=50&");
     background-size: auto;
+    background-repeat: no-repeat;
 
+}
+
+.promo_background_img{
+    display: block;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    background-image: url("https://swallowtailtea.imgix.net/s/files/1/2960/1850/files/about_values_f13f2034-9acd-41df-a7a3-2cae150c79ac_650x.jpg?v=1526915323&auto=format&q=50&");
+}
+.promo_background_img_merch{
+    display: block;
+    background-image: url("https://swallowtailtea.imgix.net/s/files/1/2960/1850/files/DSC07022_650x.jpg?v=1526856532&auto=format&q=50&");
+}
+.promo_background_img_wares{
+    display:block;
+    background-image: url("https://swallowtailtea.imgix.net/s/files/1/2960/1850/files/home_brew_wares_650x.jpg?v=1526915416&auto=format&q=50&");
 }
