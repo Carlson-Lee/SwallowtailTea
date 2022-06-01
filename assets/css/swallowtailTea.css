@@ -1,3 +1,10 @@
+/*Variables*/
+:root{
+    --main-bg-colour: grey;
+    --main-brand-colour:#373f3d;
+}
+
+
 /*All Containers*/
 .container {
     max-width: auto;
@@ -31,14 +38,15 @@ li.tea_types{
 .font_style{
     font-size: 60px;
     line-height: 60px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:'Times New Roman', Times, serif;
     font-weight: 400;
+    
 }
 
 .desktop--header{
     border:1px solid rgb(0, 0, 0);
-    width: 205px;
-    height: 100px;
+    width: 300px;
+    height: 200px;
     position: relative;
     z-index: 1;
 }
@@ -58,13 +66,10 @@ li.tea_types{
     bottom: 0;
 }
 
-.div.header_rotation{
-    border:1px solid rgb(0, 0, 0);
-
-}
 span{
     text-align: center;
 }
+
 .span.media_hidden{
     display: grid;
     min-width: 1px;
@@ -72,12 +77,17 @@ span{
     overflow: hidden;
 }
 
+.desktop--header{
+    grid-row-end: span 2;
+}
+
+
 .header_logo_container{
     width: 205px;
+    padding: 20px;
     vertical-align: middle;
 }
 .main_nav{
-
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -88,9 +98,21 @@ span{
     grid-template-columns: repeat(6, 1fr);
 
 }
+.header_rotation{
+    grid-column-start: span 2;
+    grid-row-start: span 2;
+    box-sizing: border-box;
+    display: table-cell;
+    float: none;
+    line-height: 24px;
+    position: relative;
+    z-index: auto;
+    border: 1px solid rgba(55, 63, 61, .2);
+    
+}
 
 .menu{
-    border:1px solid rgb(221, 221, 221);
+    border:1px solid black;
     text-align: center;
 }
 
