@@ -51,7 +51,7 @@ li.tea_types{
     z-index: 1;
 }
 .header_logo_container{
-
+    padding-left: 40px;
 }
 .header_description{
     
@@ -87,6 +87,7 @@ span{
     padding: 20px;
     vertical-align: middle;
 }
+
 .main_nav{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -98,6 +99,7 @@ span{
     grid-template-columns: repeat(6, 1fr);
 
 }
+
 .header_rotation{
     grid-column-start: span 2;
     grid-row-start: span 2;
