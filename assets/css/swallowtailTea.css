@@ -2,11 +2,10 @@
 :root{
     --main-bg-colour: white;
     --main-brand-colour: 1px solid rgba(55, 63, 61, .2);
+
+    --main-font-colour: #373f3d;
 }
 
-.body {
-    font-family: 'Roboto Mono', monospace;
-}
 /*All Containers*/
 .container {
     max-width: auto;
@@ -96,10 +95,9 @@ span{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    height: 150px;
     padding-top: 50px;
-    padding-left: 150px;
-    padding-right: 150px;
+    padding-left: 50px;
+    padding-right: 50px;
     grid-template-columns: repeat(6, 1fr);
 
 }
@@ -120,10 +118,22 @@ span{
 }
 
 .menu{
-    border:1px solid black;
-    text-align: center;
+    border-top: var(--main-brand-colour);
+    border-right: var(--main-brand-colour);
+    border-bottom: var(--main-brand-colour);
+    font-size: 16pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+    padding-top: 20px;
+    padding-left: 10px;
 }
 
+/*font awesome icon*/
+.fa-solid {
+    padding-left: 65px;
+    
+}
 
 
 
@@ -132,7 +142,8 @@ body{
     background-image: url("https://swallowtailtea.imgix.net/s/files/1/2960/1850/files/last-slide_2400x.jpg?v=1551770643&auto=format&q=50&");
     background-size: auto;
     background-repeat: no-repeat;
-
+    font-family: 'Roboto Mono', monospace;
+    font-display: var(--main-font-colour);
 }
 
 .promo_background_img{
