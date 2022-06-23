@@ -9,5 +9,17 @@ fetch('https://api.unsplash.com/search/photos?query=tea-leafs&client_id=c3p_40xZ
 
         document.body.style.backgroundImage = `url(${pics.urls.regular})`;
 
-    })
+        function hover(hover, enter, leave){
+            hover.addEventListener("mouseenter", enter)
+            hover.addEventListener("mouseleave", leave)
+            
+        }
 
+        hover(document.querySelectorAll(".header_link"), e =>{
+            e.target.classList.add("background_image_hover");
+        },  e => {
+            e.target.classList.remove("background_image_hover");
+        })
+
+
+    })
