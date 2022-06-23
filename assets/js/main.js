@@ -7,7 +7,7 @@ console.log(nav_header_t);
 header_link.addEventListener("mouseenter", mouseEnter);
 nav_header_t.addEventListener("mouseenter", hover_t);
 
-fetch('https://api.unsplash.com/search/photos?query=tea-leafs&client_id=c3p_40xZo67k-Vhy73WXyrVOF_dBByjLqznqOtmT9dY')
+fetch('https://api.unsplash.com/search/photos?query=tea&client_id=c3p_40xZo67k-Vhy73WXyrVOF_dBByjLqznqOtmT9dY')
     .then(response => response.json())
     .then(image => {
         let randomNumb = Math.floor(Math.random() * 9);
