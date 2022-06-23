@@ -40,7 +40,7 @@ li.tea_types{
     font-size: 60px;
     line-height: 60px;
     font-weight: 400;
-    
+
 }
 
 
@@ -120,7 +120,6 @@ span{
     position: relative;
     z-index: auto;
     border: 1px solid rgba(55, 63, 61, .2);
-    
 }
 
 .menu{
@@ -137,7 +136,7 @@ span{
 
 /* icon divs */
 .hamburger_menu{
-    visibility: hidden;
+    display: none;
 }
 
 .bag_mobile{
@@ -150,7 +149,10 @@ span{
     padding-left: 65px;
 }
 
-
+head{
+    font-family: 'Roboto Mono', monospace;
+    font-display: var(--main-font-colour);
+}
 
 body{
     background-position: top;
@@ -183,6 +185,13 @@ body{
 /* responsiveness */
 
 @media screen and (max-width: 400px) {
+    body{
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-family: 'Roboto Mono', monospace;
+        font-display: var(--main-font-colour);
+    }
 
     /* nav bar */
     .main_nav{
@@ -190,9 +199,8 @@ body{
         margin: 0;
         padding: 0;
         position: static;
-        line-height: 20px;
+        line-height: 24px;
         box-sizing: border-box;
-
     }
 
     .desktop--header{
@@ -217,13 +225,6 @@ body{
         width: 107px;
     }
 
-    /* menu's font  */
-    h2{
-        margin-top: 0;
-        margin-bottom: 10px;
-    }
-
-
 
     /* drop-down menu */
     .burger{
@@ -232,16 +233,21 @@ body{
 
 
     .dropdown_menu{
+        margin: none;
+        padding: 10px;
         position: absolute;
+        box-sizing: border-box;
+        width: 340px;
+        height: 450px;
         background-color: var(--main-bg-colour);
         left: 0;
-        padding: .8;
         border-radius: 5px;
         box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
         opacity: 0;
         pointer-events: none;
         transform: translateY(-10);
         transition: opacity 150ms ease-in-out, trasform 150ms ease-in-out;
+        
     }
 
     .dropdown_menu.active{
@@ -252,25 +258,35 @@ body{
 
     .list_dropdown{
         list-style: none;
+        text-decoration: none;
         flex: left;
         padding: 10px;
+        text-transform: capitalize;
+        font: var(--main-font-colour);
     }
 
-    .li{
-        display: none;
-        
+    a{
+        line-height: 24px;
+        text-decoration: none;
+        color: var(--main-font-colour);
+    }
+
+    a:hover{
+        text-decoration: underline;
     }
 
 
     /* font awesome logo */
     .bag_mobile{
         visibility: visible;
+        height: 25px;
+        width: 35px;
         color: var(--main-font-colour);
     }
 
     .hamburger_menu{
         position: relative;
-        visibility: visible;
+        display: block;
     }
 
     .hamburger_menu.active{
@@ -279,6 +295,11 @@ body{
         pointer-events: auto;
     }
 
+    h2{
+        margin-top: 5px;
+        margin-bottom: 0;
+        margin-right: 0;
+    }
 
 
     
