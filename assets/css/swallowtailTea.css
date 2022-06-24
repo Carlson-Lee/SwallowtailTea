@@ -13,7 +13,6 @@
     grid-gap: 20px;
 }
 
-
 .banner{
     display:grid;
     border: var(--main-brand-colour);
@@ -30,20 +29,25 @@
 
 .grid_container_contained{
     display: grid;
-    box-sizing: border-box;
+    column-gap: 25px;
+    text-align: center;
+    width: 100%;
+    height: 380px;
+    margin: 10px;
     grid-template-columns: repeat(3, 1fr);
     direction: ltr;
     justify-content: center;
-
 }
 
 .img_container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-columns: repeat(3, 1fr);
-    display: block;
+    display:block;
+    object-fit: cover;
 }
 
+.img_link{
+    align-items: flex-end;
+    height: 380px;
+}
 
 
 /*Lists*/
@@ -75,7 +79,19 @@ ul{
     font-size: 60px;
     line-height: 60px;
     font-weight: 400;
+}
 
+.img_link_font_title{
+    color: var(--main-bg-colour);
+    font-size: 24pt;
+
+}
+
+.img_link_font_title_sn{
+    align-self: flex-end;
+    color: var(--main-bg-colour);
+    font-size: 18;
+    border: 1px solid white;
 }
 
 
@@ -88,8 +104,7 @@ ul{
 }
 
 .header_logo_container{
-    /*align-items: center;*/
-    position: absolute;
+    align-items: center;
 }
 
 .header_description{
@@ -198,6 +213,8 @@ head{
 body{
     background-position: top;
     background-size: contain;
+    width: 1440px;
+    height: 1280px;
     background-repeat: no-repeat;
     font-family: 'Roboto Mono', monospace;
     font-display: var(--main-font-colour);
@@ -252,6 +269,8 @@ body{
     body{
         background-position: top;
         background-size: cover;
+        width: auto;
+        height: auto;
         background-repeat: no-repeat;
         font-family: 'Roboto Mono', monospace;
         font-display: var(--main-font-colour);
@@ -266,6 +285,10 @@ body{
         line-height: 24px;
         box-sizing: border-box;
     }
+    .container{
+        width: auto;
+        height: auto;
+    }
 
     .desktop--header{
         width: 450px;
@@ -275,8 +298,8 @@ body{
     }
 
     .header_logo_container{
-        display: flex;
-        padding: 0 0;
+        display:flex;
+        padding: 0;
     }
 
     .header_rotation{
@@ -365,7 +388,17 @@ body{
         margin-right: 0;
     }
 
+    .background_banner{
+        overflow: hidden;
+    }
 
+    .selection_grid{
+        display: flex;
+        overflow: scroll;
+        grid-template-rows: repeat(5, 1fr)
+        direction: ltr;
+        justify-content: center;
+    }
     
 
 }
