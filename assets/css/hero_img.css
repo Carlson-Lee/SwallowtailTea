@@ -1,9 +1,50 @@
-.slide_hero_Image{
-    background-position: top;
+/* a common css should be moved later */
+.hero_image_container{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: inherit;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.hero_image_slide_wrapper{
+    position: relative;
+    text-align: center;
+}
+
+.hero_img_3bgs{
+    height: 100vh;
+    min-height: 600px;
+    position: relative;
+}
+
+.slide_hero_image{
     background-size: cover;
-    width: auto;
-    height: auto;
-    background-repeat: no-repeat;
-    font-family: 'Roboto Mono', monospace;
-    font-display: var(--main-font-colour);
+    background-position: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: opacity .4s ease;
+    opacity: 0;
+}
+
+.slide_hero_image.active{
+    opacity: 1;
+}
+
+.hero_bg_contents{
+
+}
+
+h1.larger_fonts{
+
+}
+
+.create_button{
+
 }

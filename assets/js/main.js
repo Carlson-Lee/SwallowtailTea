@@ -14,7 +14,7 @@ fetch('https://api.unsplash.com/search/photos?query=tea&client_id=c3p_40xZo67k-V
         let randomNumb = Math.floor(Math.random() * 9);
         let pics = image["results"][randomNumb];
         console.log(pics);
-        document.body.style.backgroundImage = `url(${pics.urls.regular})`;
+        //document.body.style.backgroundImage = `url(${pics.urls.regular})`;
     })
 
 /* hover effect only working in the first of div in rotation menu*/
