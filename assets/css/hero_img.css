@@ -1,0 +1,9 @@
+.slide_hero_Image{
+    background-position: top;
+    background-size: cover;
+    width: auto;
+    height: auto;
+    background-repeat: no-repeat;
+    font-family: 'Roboto Mono', monospace;
+    font-display: var(--main-font-colour);
+}

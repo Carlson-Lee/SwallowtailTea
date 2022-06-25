@@ -27,27 +27,10 @@
     justify-content: center;
 }
 
-.grid_container_contained{
-    display: grid;
-    column-gap: 25px;
-    text-align: center;
-    width: 100%;
-    height: 380px;
-    margin: 10px;
-    grid-template-columns: repeat(3, 1fr);
-    direction: ltr;
-    justify-content: center;
-}
 
-.img_container{
-    display:block;
-    object-fit: cover;
-}
 
-.img_link{
-    align-items: flex-end;
-    height: 380px;
-}
+
+
 
 
 /*Lists*/
@@ -81,18 +64,7 @@ ul{
     font-weight: 400;
 }
 
-.img_link_font_title{
-    color: var(--main-bg-colour);
-    font-size: 24pt;
 
-}
-
-.img_link_font_title_sn{
-    align-self: flex-end;
-    color: var(--main-bg-colour);
-    font-size: 18;
-    border: 1px solid white;
-}
 
 
 /* headers */
@@ -212,12 +184,11 @@ head{
 
 body{
     background-position: top;
-    background-size: contain;
-    width: 1440px;
-    height: 1280px;
+    background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Roboto Mono', monospace;
     font-display: var(--main-font-colour);
+    margin: 0;
 }
 
 .background_temp{
@@ -236,36 +207,68 @@ body{
 .sites_pages{
     display: grid;
     box-sizing: border-box;
-
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr ;
 }
 
-.img_link{
-    display: block;
-    padding: 20px;
-    background-position: 50%;
-    background-repeat: no-repeat;
+
+
+.footer_gradient_container{
+    background-color: antiquewhite;
 }
+
 
 
 .left_container{
     direction: ltr;
     text-align: left;
+    height: 150px;
     width: 50%;
+    float: left;
+    background-color: bisque;
 }
 
 .right_container{
-    
-    width: 50%;
     direction: rtl;
     text-align: right;
+    height: 150px;
+    width: 50%;
+    float: right;
+    background-color: beige;
+
+}
+
+.footer_ref_container{
+    display: inline-block;
+    direction: ltr;
+    font-size: 20pt;
+
+}
+
+.footer_links{
+    display: flex;
+    position: center;
+    justify-content: space-evenly;
+    gap: 30px;
+    font-size: 16pt;
+}
+
+h3{
+    font: 20pt;
+}
+
+.footer_link_type{
+    display: flex;
+    position: center;
+    gap: 30px;
+    font-size: 16pt;
 }
 
 
 /* responsiveness */
 
 @media screen and (max-width: 400px) {
+    
     body{
         background-position: top;
         background-size: cover;
@@ -395,7 +398,7 @@ body{
     .selection_grid{
         display: flex;
         overflow: scroll;
-        grid-template-rows: repeat(5, 1fr)
+        grid-template-rows: repeat(5, 1fr);
         direction: ltr;
         justify-content: center;
     }

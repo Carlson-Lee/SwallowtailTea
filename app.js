@@ -16,11 +16,6 @@ app.get('/', (req, res) => {
     res.render("index", {"title":"swallowtail Tea"})
 })
 
-app.get('product', (req, res) => {
-    res.send('This is product page!')
-})
-
-
 
 //routes
 app.listen(PORT, () => {
