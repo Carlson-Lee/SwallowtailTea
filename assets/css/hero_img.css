@@ -17,6 +17,7 @@
 
 .hero_img_3bgs{
     height: 100vh;
+    background-size: 100%;
     min-height: 600px;
     position: relative;
 }
@@ -38,13 +39,31 @@
 }
 
 .hero_bg_contents{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    transition: opacity .2s ease;
+    opacity: 0;
+    pointer-events: none;
+}
 
+.hero_bg_contents.active{
+    opacity: 1;
 }
 
 h1.larger_fonts{
-
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 48px;
 }
 
 .create_button{
-
+    border-radius: 2px;
+    padding: 9px 20px 7px;
+    color: #373f3d;
+    border: 2px solid rgba(55,63,61.2s);
 }
