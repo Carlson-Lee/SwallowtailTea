@@ -22,7 +22,7 @@
     position: relative;
 }
 
-.slide_hero_image{
+.three_piles, .green_hill, .cups{
     background-size: cover;
     background-position: 50%;
     position: absolute;
@@ -34,11 +34,11 @@
     opacity: 0;
 }
 
-.slide_hero_image.active{
+.three_piles.active, .green_hill.active, .cups.active{
     opacity: 1;
 }
 
-.hero_bg_contents{
+.content_sip, .content_wp, .content_bsh{
     position: absolute;
     left: 0;
     right: 0;
@@ -50,7 +50,7 @@
     pointer-events: none;
 }
 
-.hero_bg_contents.active{
+.content_sip.active, .content_wp.active, .content_bsh.active{
     opacity: 1;
 }
 
