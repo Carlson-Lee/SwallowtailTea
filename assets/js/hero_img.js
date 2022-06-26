@@ -53,6 +53,7 @@ header_link.forEach(link => {
     }
     //this set's the first background image on page load// 
     document.querySelector(".three_piles").classList.add("active");
+    document.querySelector(".content_sip").classList.add("active");
 });
 
 
