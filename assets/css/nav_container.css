@@ -39,22 +39,21 @@
 
 .nav_container{
     width: 50%;
+    box-sizing: border-box;
     display: table-cell;
     vertical-align: top;
-    border: 1px solid rgba(55,63,61,.2);
 }
 
 .header_nav{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    float: left;
+    width: auto;
 }
 
 
 
 /* <p> */
 .header_description{
-    position:absolute;
+    position: absolute;
     max-height: 72px;
     display: -webkit-box;
     -webkit-line-clamp: 3;
@@ -79,10 +78,16 @@
 /* <a> */
 
 .header_link_cell{
+    display: flex;
     border-right: 1px solid rgba(55,63,61,.2);
     border-bottom: 1px solid rgba(55,63,61,.2);
-    width: 33.3333%;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
     text-transform: uppercase;
+    padding-right: 20px;
+    padding-left: 20px;
+    
 }
 
 

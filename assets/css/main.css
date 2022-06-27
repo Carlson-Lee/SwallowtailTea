@@ -326,10 +326,6 @@ h3{
         margin-right: 0;
     }
 
-    .background_banner{
-        overflow: hidden;
-    }
-
     .selection_grid{
         display: flex;
         overflow: scroll;
