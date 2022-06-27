@@ -1,0 +1,27 @@
+/* this css is for items inside tea_leaves.ejs */
+
+.tea_catergories {
+    display: grid;
+    box-sizing: border-box;
+    margin-top: 150px;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tea_selections {
+    padding-left: 200px;
+}
+
+.tea_types {
+    overflow-x: initial;
+    width: auto;
+    float: left;
+    text-align: center;
+    padding: 0;
+}
+
+.five_tea_img {
+    width: 220px;
+    height: 220px;
+}
