@@ -3,7 +3,7 @@
     --main-bg-colour: white;
     --main-brand-colour: 1px solid rgba(55, 63, 61, .2);
 
-    --main-font-colour: #373f3d;
+    --main-font-colour: ;
 }
 
 /*All Containers*/
@@ -60,54 +60,10 @@ body {
     grid-template-rows: 1fr 1fr;
 }
 
-.footer_gradient_container {
-    background-color: antiquewhite;
-}
-
-.left_container {
-    direction: ltr;
-    text-align: left;
-    height: 150px;
-    width: 50%;
-    float: left;
-    background-color: bisque;
-}
-
-.right_container {
-    direction: rtl;
-    text-align: right;
-    height: 150px;
-    width: 50%;
-    float: right;
-    background-color: beige;
-
-}
-
-.footer_ref_container {
-    display: inline-block;
-    direction: ltr;
-    font-size: 20pt;
-
-}
-
-.footer_links {
-    display: flex;
-    position: center;
-    justify-content: space-evenly;
-    gap: 30px;
-    font-size: 16pt;
-}
-
 h3 {
     font: 20pt;
 }
 
-.footer_link_type {
-    display: flex;
-    position: center;
-    gap: 30px;
-    font-size: 16pt;
-}
 
 
 
