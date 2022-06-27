@@ -1,5 +1,4 @@
-/* a common css should be moved later */
-.hero_image_container{
+.hero_image_container {
     box-sizing: border-box;
     margin: -150px;
     padding: 0;
@@ -10,19 +9,21 @@
     font-size: inherit;
 }
 
-.hero_image_slide_wrapper{
+.hero_image_slide_wrapper {
     position: relative;
     text-align: center;
 }
 
-.hero_img_3bgs{
+.hero_img_3bgs {
     height: 100vh;
     background-size: 100%;
     min-height: 600px;
     position: relative;
 }
 
-.three_piles, .green_hill, .cups{
+.three_piles,
+.green_hill,
+.cups {
     background-size: cover;
     background-position: 50%;
     position: absolute;
@@ -34,11 +35,15 @@
     opacity: 0;
 }
 
-.three_piles.active, .green_hill.active, .cups.active{
+.three_piles.active,
+.green_hill.active,
+.cups.active {
     opacity: 1;
 }
 
-.content_sip, .content_wp, .content_bsh{
+.content_sip,
+.content_wp,
+.content_bsh {
     position: absolute;
     left: 0;
     right: 0;
@@ -50,28 +55,30 @@
     pointer-events: none;
 }
 
-.content_sip.active, .content_wp.active, .content_bsh.active{
+.content_sip.active,
+.content_wp.active,
+.content_bsh.active {
     opacity: 1;
 }
 
-h1.larger_fonts{
+h1.larger_fonts {
     font-family: 'Roboto Mono', monospace;
     font-weight: 400;
     font-size: 64px;
     line-height: 48px;
 }
 
-.create_button{
+.create_button {
     border-radius: 2px;
     padding: 9px 20px 7px;
     color: #373f3d;
-    border: 2px solid rgba(55,63,61.2s);
+    border: 2px solid;
 }
 
 /* changes the css property when screen size is at 400px or less*/
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 400px) {
 
-    h1.larger_fonts{
+    h1.larger_fonts {
         font-family: 'Roboto Mono', monospace;
         font-weight: 400;
         font-size: 34px;

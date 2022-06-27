@@ -8,10 +8,8 @@
     height: 150px;
     width: 50%;
     float: left;
-    background-color:rgb(189, 189, 189);
+    background-color: rgb(189, 189, 189);
 }
-
-
 
 .right_container {
     text-align: right;
@@ -24,18 +22,17 @@
 
 /* <p> */
 
-.mini_title{
+.mini_title {
     font-weight: 300;
     font-size: 18pt;
 }
 
-.quote{
+.quote {
     opacity: .5;
 }
 
-
 .footer_ref_container {
-    display:table-row;
+    display: table-row;
     max-width: 1440px;
     grid-template-rows: repeat(2 1fr);
     position: absolute;
@@ -64,13 +61,12 @@
     font-size: 16pt;
 }
 
-.footer_secondary_links{
+.footer_secondary_links {
     display: grid;
     grid-auto-flow: row;
     padding-left: 20px;
 }
 
-.ending_title{
+.ending_title {
     opacity: .5;
-    
 }
