@@ -4,8 +4,16 @@ Project's Title: # SwallowtailTea
 This is a Swallowtail tea website replica.
 The original site is: https://swallowtailtea.com/
 
+<!-- issues -->
 this project is replicated using Web dev introduction level skill.
 many function from the orignal site are not implemented in this replica.
+
+The website is not very responsive to anything outside of web size 1440px
+shrinking or expaning the size will cause the page to become unproportional.
+A media query of 400px is implemented, but only works on the top of the page.
+Links in this project will not direct you to any sub page, due to there is only 
+1 page being designed.
+
 
 The only functional javaScript feature is the hover background changing feature.
 <!-- link to my heroku depolyment -->
