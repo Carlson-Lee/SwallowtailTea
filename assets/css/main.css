@@ -18,7 +18,6 @@
     padding-right: 40px;
     vertical-align: baseline;
     z-index: 1;
-
 }
 
 /*Lists*/
@@ -30,20 +29,6 @@ ul {
 }
 
 
-
-.tea_types {
-    position: block;
-    float: left;
-    display: block;
-    text-align: center;
-    padding: 0;
-
-}
-
-.five_tea_img {
-    width: 200px;
-    height: 200px;
-}
 
 /*span*/
 .font_style {
@@ -149,12 +134,12 @@ h3 {
         box-sizing: border-box;
     } */
 
-    /* .selection_grid {
+    .selection_grid {
         display: flex;
         overflow: scroll;
         grid-template-rows: repeat(5, 1fr);
         direction: ltr;
         justify-content: center;
-    } */
+    }
 
 }
