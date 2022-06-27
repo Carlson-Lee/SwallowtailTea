@@ -110,7 +110,7 @@
 
 /* <i> */
 .fa-bag-shopping {
-   padding-left: 20px; 
+    padding-left: 20px;
 }
 
 /* changes the css property when screen size is at 400px or less*/
@@ -122,7 +122,7 @@
 
     .mobile_svg_logo {
         display: inline;
-        position:relative;
+        position: relative;
         max-height: 40px;
         padding-left: 60px;
     }
@@ -174,7 +174,7 @@
         color: var(--main-font-colour);
     }
 
-    .fa-bag-shopping-1{
+    .fa-bag-shopping-1 {
         color: aqua;
         z-index: 1;
     }
@@ -223,5 +223,3 @@
     }
 
 }
-
-

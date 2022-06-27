@@ -7,7 +7,7 @@ header_link.forEach(link => {
     link.addEventListener("mouseenter", mouseEnter);
 
     //call the function i name my mouseEnter//
-    function mouseEnter(){
+    function mouseEnter() {
         //selecting each image by thier class name//
         let three_piles = document.querySelector("#three_piles");
         let green_hill = document.querySelector("#green_hill");
@@ -18,34 +18,31 @@ header_link.forEach(link => {
         let content_bsh = document.querySelector("#content_bsh");
 
         /*on mouse hover, i compared the image's id with the header's id
-        if they dont match, remove the image and content message's class*/ 
-        if(three_piles.id != link.id){
+        if they dont match, remove the image and content message's class*/
+        if (three_piles.id != link.id) {
             document.querySelector(".three_piles").classList.remove("active");
             document.querySelector(".content_sip").classList.remove("active");
         }
         //if they are a match, add the active class on the image and content message//
-        else
-        {
+        else {
             document.querySelector(".three_piles").classList.add("active");
             document.querySelector(".content_sip").classList.add("active");
         }
 
-        if(green_hill.id != link.id){
+        if (green_hill.id != link.id) {
             document.querySelector(".green_hill").classList.remove("active");
             document.querySelector(".content_wp").classList.remove("active");
         }
-        else
-        {
+        else {
             document.querySelector(".green_hill").classList.add("active");
             document.querySelector(".content_wp").classList.add("active");
         }
 
-        if(cups.id != link.id){
+        if (cups.id != link.id) {
             document.querySelector(".cups").classList.remove("active");
             document.querySelector(".content_bsh").classList.remove("active");
         }
-        else
-        {
+        else {
             document.querySelector(".cups").classList.add("active");
             document.querySelector(".content_bsh").classList.add("active");
         }
