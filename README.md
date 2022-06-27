@@ -14,6 +14,11 @@ A media query of 400px is implemented, but only works on the top of the page.
 Links in this project will not direct you to any sub page, due to there is only 
 1 page being designed.
 
+<!-- future proof -->
+this project is made with future improvement in mind,
+files in partials are to help create a uniform layout.
+css and javascript all have same name as the main ejs file
+to help referencing them when in need.
 
 The only functional javaScript feature is the hover background changing feature.
 <!-- link to my heroku depolyment -->
