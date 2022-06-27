@@ -28,7 +28,6 @@ header_link.forEach(link => {
         {
             document.querySelector(".three_piles").classList.add("active");
             document.querySelector(".content_sip").classList.add("active");
-            
         }
 
         if(green_hill.id != link.id){
